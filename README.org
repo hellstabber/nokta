@@ -14,5 +14,5 @@ managed by [[https://chezmoi.io][Chezmoi]]
 | Terminal Emulator    | Alacritty   | [[https://github.com/hellstabber/nokta/tree/main/dot_config/alacritty][.config/alacritty]] |
 | Window Manager       | i3wm        | [[https://github.com/hellstabber/nokta/tree/main/dot_config/i3][.config/i3]]        |
 | Text Editor          | Neovim      | [[https://github.com/hellstabber/nokta/tree/main/dot_config/nvim][.config/nvim]]      |
-| Text Editor          | Emacs       | [[https://github.com/hellstabber/nokta/tree/main/dot_doom.d][.doom.d]]           |
+| Text Editor          | Emacs       | [[https://github.com/hellstabber/nokta/tree/main/dot_config/doom][.config/doom]]           |
 | Terminal Multiplexer | tmux        | [[https://github.com/hellstabber/nokta/tree/main/dot_config/tmux][.config/tmux]]      |
