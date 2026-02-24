@@ -6,8 +6,8 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-;; (setq user-full-name "John Doe"
-;;       user-mail-address "john@doe.com")
+ (setq user-full-name "Eren Kaplan"
+       user-mail-address "erenkaplan@tutanota.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -40,7 +40,24 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
+(setq org-directory "~/notes/org/")
+(setq org-roam-directory (file-truename "~/notes/roam/"))
+(setq org-roam-file-extensions '("org"))
+
+(org-roam-db-autosync-mode)
+
+(use-package! org-roam-ui
+  :after org-roam
+  :hook (org-roam-mode . org-roam-ui-mode)
+  :config
+  (setq org-roam-ui-sync-theme t
+        org-roam-ui-follow t
+        org-roam-ui-update-on-save t
+        org-roam-ui-open-on-start t))
+
+(use-package vterm
+  :ensure t
+  :commands vterm)
 
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
